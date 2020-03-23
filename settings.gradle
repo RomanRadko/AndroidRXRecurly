@@ -1,0 +1,2 @@
+include ':app', ':recurlylib'
+rootProject.name='recurly'

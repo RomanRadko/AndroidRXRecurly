@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryBg">
+
+    <com.route4me.recurlylib.views.BaseTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="@string/please_enter_your_address"
+        android:textColor="@color/primaryDark"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/addressForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/countryPicker"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:ccp_contentColor="@color/primaryDark"
+            app:ccpDialog_textColor="@color/primaryDark"
+            app:ccp_countryPreference="US"
+            app:ccp_defaultNameCode="US"
+            app:ccp_showFullName="true"
+            app:ccp_showPhoneCode="false" />
+
+        <com.route4me.recurlylib.views.BaseEditText
+            android:id="@+id/city"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:hint="@string/city"
+            android:text="New York"
+            android:textColor="@color/primaryDark" />
+
+        <com.route4me.recurlylib.views.BaseEditText
+            android:id="@+id/region"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:hint="@string/region"
+            android:text="NY"
+            android:textColor="@color/primaryDark" />
+
+        <com.route4me.recurlylib.views.BaseEditText
+            android:id="@+id/street"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:hint="@string/street"
+            android:text="900 Camp St."
+            android:textColor="@color/primaryDark" />
+
+    </LinearLayout>
+
+    <com.route4me.recurlylib.views.BaseTextView
+        android:id="@+id/continueBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/addressForm"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/primaryDark"
+        android:gravity="center"
+        android:text="@string/continue_txt"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
+
