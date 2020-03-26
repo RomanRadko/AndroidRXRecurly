@@ -1,4 +1,4 @@
-package com.route4me.recurlylib
+package com.radko.recurlylib
 
 import com.recurly.v3.Pager
 import com.recurly.v3.QueryParams

@@ -1,4 +1,4 @@
-package com.route4me.recurlylib.model
+package com.radko.recurlylib.model
 
 import android.content.Context
 

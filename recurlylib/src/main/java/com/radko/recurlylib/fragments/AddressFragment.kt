@@ -1,4 +1,4 @@
-package com.route4me.recurlylib.fragments
+package com.radko.recurlylib.fragments
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import com.route4me.recurlylib.R
-import com.route4me.recurlylib.RecurlyAPI.Companion.ACCOUNT_CODE
-import com.route4me.recurlylib.RecurlyAPI.Companion.API_KEY
-import com.route4me.recurlylib.model.RecurlyPreferences
+import com.radko.recurlylib.R
+import com.radko.recurlylib.RecurlyAPI.Companion.ACCOUNT_CODE
+import com.radko.recurlylib.RecurlyAPI.Companion.API_KEY
+import com.radko.recurlylib.model.RecurlyPreferences
 import kotlinx.android.synthetic.main.address_fragment.*
 
 class AddressFragment : Fragment() {

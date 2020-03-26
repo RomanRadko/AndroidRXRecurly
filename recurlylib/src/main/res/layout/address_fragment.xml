@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/primaryBg">
 
-    <com.route4me.recurlylib.views.BaseTextView
+    <com.radko.recurlylib.views.BaseTextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             app:ccp_showFullName="true"
             app:ccp_showPhoneCode="false" />
 
-        <com.route4me.recurlylib.views.BaseEditText
+        <com.radko.recurlylib.views.BaseEditText
             android:id="@+id/city"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:text="New York"
             android:textColor="@color/primaryDark" />
 
-        <com.route4me.recurlylib.views.BaseEditText
+        <com.radko.recurlylib.views.BaseEditText
             android:id="@+id/region"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             android:text="NY"
             android:textColor="@color/primaryDark" />
 
-        <com.route4me.recurlylib.views.BaseEditText
+        <com.radko.recurlylib.views.BaseEditText
             android:id="@+id/street"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
 
     </LinearLayout>
 
-    <com.route4me.recurlylib.views.BaseTextView
+    <com.radko.recurlylib.views.BaseTextView
         android:id="@+id/continueBtn"
         android:layout_width="match_parent"
         android:layout_height="40dp"

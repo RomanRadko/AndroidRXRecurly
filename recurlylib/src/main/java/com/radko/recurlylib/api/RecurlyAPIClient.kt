@@ -1,13 +1,13 @@
-package com.route4me.recurlylib.api
+package com.radko.recurlylib.api
 
 import com.recurly.v3.Client
 import com.recurly.v3.Pager
 import com.recurly.v3.QueryParams
 import com.recurly.v3.requests.*
 import com.recurly.v3.resources.*
-import com.route4me.recurlylib.RecurlyAPI
-import com.route4me.recurlylib.model.RecurlySingle
-import com.route4me.recurlylib.model.SingletonHolder
+import com.radko.recurlylib.RecurlyAPI
+import com.radko.recurlylib.model.RecurlySingle
+import com.radko.recurlylib.model.SingletonHolder
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers

@@ -1,11 +1,11 @@
-package com.route4me.recurlylib.views
+package com.radko.recurlylib.views
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.LinearLayout
 import com.recurly.v3.resources.Subscription
-import com.route4me.recurlylib.R
+import com.radko.recurlylib.R
 import kotlinx.android.synthetic.main.subscription_details_layout.view.*
 import org.joda.time.DateTime
 import java.text.SimpleDateFormat

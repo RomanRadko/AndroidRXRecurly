@@ -1,4 +1,4 @@
-package com.route4me.recurlylib.fragments
+package com.radko.recurlylib.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -8,9 +8,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
-import com.route4me.recurlylib.R
-import com.route4me.recurlylib.api.RecurlyAPIClient
-import com.route4me.recurlylib.model.RecurlyPreferences
+import com.radko.recurlylib.R
+import com.radko.recurlylib.api.RecurlyAPIClient
+import com.radko.recurlylib.model.RecurlyPreferences
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers

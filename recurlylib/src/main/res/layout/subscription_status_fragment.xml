@@ -10,7 +10,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <com.route4me.recurlylib.views.BaseTextView
+        <com.radko.recurlylib.views.BaseTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -19,13 +19,13 @@
             android:textColor="@color/primaryDark"
             android:textSize="20sp" />
 
-        <com.route4me.recurlylib.views.SubscriptionDetailsView
+        <com.radko.recurlylib.views.SubscriptionDetailsView
             android:id="@+id/detailsView"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.route4me.recurlylib.views.BaseTextView
+        <com.radko.recurlylib.views.BaseTextView
             android:id="@+id/okBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

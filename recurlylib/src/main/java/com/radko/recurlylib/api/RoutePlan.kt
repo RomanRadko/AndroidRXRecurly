@@ -1,4 +1,4 @@
-package com.route4me.recurlylib.api
+package com.radko.recurlylib.api
 
 enum class RoutePlan(val code: String) {
     PLAN_MONTH("mobile-unlim-month"),

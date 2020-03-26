@@ -1,11 +1,11 @@
-package com.route4me.recurlylib.model
+package com.radko.recurlylib.model
 
 import android.annotation.SuppressLint
 import com.recurly.v3.Client
 import com.recurly.v3.QueryParams
 import com.recurly.v3.requests.*
 import com.recurly.v3.resources.*
-import com.route4me.recurlylib.api.RoutePlan
+import com.radko.recurlylib.api.RoutePlan
 import io.reactivex.Single
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers

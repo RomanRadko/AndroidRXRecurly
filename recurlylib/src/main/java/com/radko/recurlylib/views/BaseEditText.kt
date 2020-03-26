@@ -1,11 +1,11 @@
-package com.route4me.recurlylib.views
+package com.radko.recurlylib.views
 
 import android.content.Context
 import android.graphics.Typeface
 import android.util.AttributeSet
-import android.widget.TextView
+import android.widget.EditText
 
-class BaseTextView : TextView {
+class BaseEditText : EditText {
     private var attrs: AttributeSet? = null
     private var defStyle = 0
 

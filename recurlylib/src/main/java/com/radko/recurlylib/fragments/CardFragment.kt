@@ -1,4 +1,4 @@
-package com.route4me.recurlylib.fragments
+package com.radko.recurlylib.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
@@ -17,10 +17,10 @@ import com.braintreepayments.cardform.view.CardForm
 import com.recurly.v3.ApiException
 import com.recurly.v3.QueryParams
 import com.recurly.v3.requests.*
-import com.route4me.recurlylib.R
-import com.route4me.recurlylib.api.RecurlyAPIClient
-import com.route4me.recurlylib.api.RoutePlan
-import com.route4me.recurlylib.model.RecurlyPreferences
+import com.radko.recurlylib.R
+import com.radko.recurlylib.api.RecurlyAPIClient
+import com.radko.recurlylib.api.RoutePlan
+import com.radko.recurlylib.model.RecurlyPreferences
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
