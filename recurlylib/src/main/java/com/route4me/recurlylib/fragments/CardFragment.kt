@@ -3,9 +3,11 @@ package com.route4me.recurlylib.fragments
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.DialogFragment
@@ -53,7 +55,7 @@ class CardFragment : Fragment() {
                 progressBar.visibility = View.VISIBLE
                 createSubscription(buildStubAccount(RecurlyPreferences(context!!).accountCode!!, billingAddress))
             } else {
-                Toast.makeText(context, "Please check fields.", Toast.LENGTH_LONG).show()
+                showToast("Please check fields.")
             }
         }
     }
@@ -124,15 +126,14 @@ class CardFragment : Fragment() {
             .subscribe({
                 progressBar.visibility = View.GONE
                 Log.d(TAG, "Subscription :: $it")
-                Toast.makeText(context, "Congrats, subscribed successfully!", Toast.LENGTH_LONG)
-                    .show()
+                showToast("Congrats, subscribed successfully!")
                 navigateSubscriptionStatusFragment(it.id)
 
             },
                 {
                     progressBar.visibility = View.GONE
                     Log.e(TAG, "Error :: $it")
-                    Toast.makeText(context, "Failed to subscribe: ${(it as ApiException).error.message}", Toast.LENGTH_LONG).show()
+                    showToast("Failed to subscribe: ${(it as ApiException).error.message}")
                 })
         disposables.add(createSubscription)
     }
@@ -169,7 +170,7 @@ class CardFragment : Fragment() {
                 {
                     progressBar.visibility = View.GONE
                     Log.e(TAG, "Error :: $it")
-                    Toast.makeText(context, "Failed to purchase.", Toast.LENGTH_LONG).show()
+                    showToast("Failed to purchase.")
                 })
         disposables.add(createPurchase)
     }
@@ -189,7 +190,7 @@ class CardFragment : Fragment() {
                 {
                     progressBar.visibility = View.GONE
                     Log.e(TAG, "Error :: $it")
-                    Toast.makeText(context, "Failed to load.", Toast.LENGTH_LONG).show()
+                    showToast("Failed to load.")
                 })
         disposables.add(listAccountSubscriptions)
     }
@@ -203,5 +204,18 @@ class CardFragment : Fragment() {
         }
         subscriptionFragment.arguments = bundle
         subscriptionFragment.show(transaction, SubscriptionStatusDialog.TAG)
+    }
+
+    private fun showToast(message: String) {
+        val layout: View = layoutInflater.inflate(
+            R.layout.toast_layout,
+            view?.findViewById(R.id.toastContainer) as ViewGroup?
+        )
+        (layout.findViewById(R.id.toastContainer) as TextView).text = message
+        Toast(context).apply {
+            setGravity(Gravity.BOTTOM, 0, 100)
+            duration = Toast.LENGTH_LONG
+            view = layout
+        }.show()
     }
 }

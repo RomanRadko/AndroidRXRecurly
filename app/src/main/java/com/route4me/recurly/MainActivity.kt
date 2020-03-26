@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         //TODO: for testing, should not be stored in the apk
         const val KEY = "a52e28fd4e304068936bae14560fd23a"
         // Unique user identifier
-        const val CODE = "test_customer_83"
+        const val CODE = "test_customer_89"
     }
 
     @SuppressLint("CheckResult")
